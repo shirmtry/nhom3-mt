@@ -1,0 +1,16 @@
+# PyTorch có sẵn trên Colab/Kaggle, không cài lại.
+transformers>=4.44,<5
+peft>=0.12,<1
+sentencepiece>=0.2.0
+protobuf
+sacrebleu>=2.4
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+huggingface_hub>=0.24
+requests
+pyyaml
+scikit-learn
+gradio>=4.40
+# Tùy chọn (cài riêng, xem notebook):
+#   underthesea   — tách từ tiếng Việt cho độ hiếm R (thiếu thì tách theo âm tiết)
+#   unbabel-comet — chỉ số COMET

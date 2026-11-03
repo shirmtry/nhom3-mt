@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Môi trường ảo
+venv*/
+.venv*/
+env/
+
+# Mô hình (~1,6 GB) — để trên GitHub Release, không đưa vào git
+models/*
+!models/README.txt
+*.zip
+*.safetensors
+*.npy
+
+# Dữ liệu / kết quả huấn luyện chạy trên máy
+training/work*/
+ket_qua/
+
+# Khác
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+# App demo Nhóm 3 (chạy trên CPU). Python 3.10 – 3.12.
+flask>=3.0
+torch>=2.1
+transformers>=4.44
+sentencepiece>=0.1.99
+sentence-transformers>=2.7
+underthesea>=6.8
+numpy>=1.24

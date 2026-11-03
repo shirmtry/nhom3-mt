@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nhóm 3 · Dịch Việt/Pháp → Anh</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M8 11h9M8 16h6M8 21h9' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M20 12l4 4-4 4' fill='none' stroke='%23fbbf24' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor"/>
+          <path d="M8 11h9M8 16h6M8 21h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M20 12l4 4-4 4" fill="none" stroke="#fbbf24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="brand-name">Nhóm 3 · Dịch Việt/Pháp → Anh</div>
+          <div class="brand-sub">Multilingual Transformer với dữ liệu song ngữ hạn chế</div>
+        </div>
+      </div>
+      <div id="status" class="status busy" title="Trạng thái mô hình"><span class="dot"></span><span class="t">Đang kiểm tra…</span></div>
+    </div>
+    <nav class="wrap tabs" role="tablist">
+      <button class="tab on" data-tab="translate" role="tab" aria-selected="true">Dịch</button>
+      <button class="tab" data-tab="results" role="tab" aria-selected="false">Kết quả thử nghiệm</button>
+      <button class="tab" data-tab="about" role="tab" aria-selected="false">Cách hoạt động</button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- ======================= TAB DỊCH ======================= -->
+    <section id="tab-translate" class="panel on" role="tabpanel">
+      <div class="grid">
+        <div class="col">
+          <div class="card o-in">
+            <div class="row">
+              <span class="label">Ngôn ngữ nguồn</span>
+              <div class="seg" id="srcSeg" role="group" aria-label="Ngôn ngữ nguồn">
+                <button type="button" data-v="auto" class="on" aria-pressed="true">Tự động</button>
+                <button type="button" data-v="vi" aria-pressed="false">Tiếng Việt</button>
+                <button type="button" data-v="fr" aria-pressed="false">Français</button>
+              </div>
+            </div>
+            <textarea id="input" maxlength="2000" placeholder="Nhập câu tiếng Việt hoặc tiếng Pháp…" aria-label="Câu cần dịch"></textarea>
+            <div class="ta-foot"><span id="count">0 / 2000</span><span>Ctrl + Enter để dịch</span></div>
+            <div class="row">
+              <span class="label">Chế độ</span>
+              <div class="seg" id="modeSeg" role="group" aria-label="Chế độ dịch">
+                <button type="button" data-v="full" class="on" aria-pressed="true">Có cổng</button>
+                <button type="button" data-v="draft" aria-pressed="false">Chỉ dịch nháp</button>
+                <button type="button" data-v="always" aria-pressed="false">Luôn tra kho</button>
+              </div>
+            </div>
+            <p class="mode-desc" id="modeDesc"></p>
+            <div class="actions">
+              <button type="button" id="go" class="btn primary">Dịch sang tiếng Anh</button>
+              <button type="button" id="clear" class="btn ghost">Xoá</button>
+            </div>
+          </div>
+
+          <div class="card o-samples">
+            <div class="card-title">Câu thử nhanh</div>
+            <div class="samples" id="samples"></div>
+          </div>
+
+          <div class="card o-hist">
+            <div class="card-title">Lịch sử <button type="button" id="clearHist" class="link">xoá lịch sử</button></div>
+            <ul id="history" class="history"><li class="muted">Chưa có câu nào.</li></ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card out o-out">
+            <div class="card-title">Bản dịch tiếng Anh
+              <span class="meta" id="outMeta"></span>
+              <button type="button" id="copy" class="btn small" disabled>Sao chép</button>
+            </div>
+            <div id="output" class="output empty">Bản dịch sẽ hiện ở đây.</div>
+          </div>
+
+          <div class="card o-pipe" id="pipeCard" hidden>
+            <div class="card-title">Mô hình đã làm gì <span class="pill" id="pipeMode"></span><span class="meta" id="pipeTime"></span></div>
+            <div id="pipe"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TAB KẾT QUẢ ======================= -->
+    <section id="tab-results" class="panel" role="tabpanel">
+      <div id="results"><div class="card"><div class="empty-box">Đang tải…</div></div></div>
+    </section>
+
+    <!-- ======================= TAB CÁCH HOẠT ĐỘNG ======================= -->
+    <section id="tab-about" class="panel" role="tabpanel">
+      <div class="card">
+        <div class="card-title">Một câu đi qua 6 bước</div>
+        <ol class="flow">
+          <li class="c-base"><b>① Tiền xử lý.</b> Chuẩn hóa chữ (NFC), tách mảnh từ SentencePiece của mBART-50 và gắn mã ngôn ngữ <code>[vi_VN]</code> / <code>[fr_XX]</code>.</li>
+          <li class="c-core"><b>② Dịch nháp.</b> Multilingual Transformer (mBART-50 + LoRA, học chung Việt–Anh và Pháp–Anh) cho bản nháp ŷ và độ tự tin <b>C</b>.</li>
+          <li class="c-ctrl"><b>③ Cổng.</b> Câu là <b>khó</b> nếu C &lt; τ hoặc độ hiếm R &gt; ρ (R = tỉ lệ từ ít gặp trong dữ liệu huấn luyện). Câu dễ dùng luôn ŷ, không tra kho.</li>
+          <li class="c-aug"><b>④ Tra kho.</b> LaBSE biến câu thành vector, tìm 5 câu Pháp giống nhất trong kho Pháp–Anh (tìm xuyên ngôn ngữ, không dịch qua tiếng Pháp).</li>
+          <li class="c-aug"><b>⑤ Chọn bằng chứng.</b> Reranker đọc cả cặp (câu nguồn, câu Anh ứng viên) để chọn e*. Điểm &lt; δ thì bỏ qua và giữ bản nháp.</li>
+          <li class="c-aug"><b>⑥ Dịch lại.</b> Cùng Transformer đó, đầu vào <code>[lang] x &lt;/s&gt; e* &lt;/s&gt;</code>, mượn thuật ngữ/cấu trúc từ e* để ra ŷ′.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <div class="card-title">Thành phần</div>
+        <div class="scroll"><table class="tbl">
+          <thead><tr><th>Mô hình</th><th>Vai trò</th><th class="r">Tham số</th><th>Nhóm huấn luyện?</th></tr></thead>
+          <tbody>
+            <tr><td><b>mBART-50 + LoRA</b> (r = 16)</td><td>② dịch nháp, ⑥ dịch lại</td><td class="r">~613 triệu (học 2,36 triệu)</td><td>Có</td></tr>
+            <tr><td><b>LaBSE</b></td><td>④ mã hóa câu, tìm trong kho</td><td class="r">~471 triệu</td><td>Không (dùng sẵn)</td></tr>
+            <tr><td><b>bge-reranker-v2-m3</b></td><td>⑤ chấm điểm ứng viên</td><td class="r">~568 triệu</td><td>Không (dùng sẵn)</td></tr>
+            <tr><td>underthesea · từ điển tần suất</td><td>③ tách từ, độ hiếm R</td><td class="r">–</td><td>–</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">Ngưỡng τ, ρ, δ được chọn trên tập dev. Ba chế độ ở tab Dịch tương ứng ba dòng "C" trong bảng kết quả.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">Nhóm 3 · TMG301 — Multilingual Transformer Việt/Pháp → Anh với dữ liệu song ngữ hạn chế</footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}?v=1"></script>
+</body>
+</html>

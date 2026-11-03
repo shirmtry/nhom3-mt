@@ -22,7 +22,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 MODELS = os.path.join(ROOT, "models")
 TARGET = os.path.join(MODELS, "nhom3_mt")
 TAG, FILE = "v1.0", "nhom3_mt.zip"
-DEFAULT_REPO = "TEN_GITHUB_CUA_BAN/nhom3-mt"   # chỉ dùng khi không đọc được địa chỉ repo từ git
+DEFAULT_REPO = "triethuynh321/nhom3-mt"   # chỉ dùng khi không đọc được địa chỉ repo từ git
 
 
 def repo_from_git():

@@ -1,0 +1,17 @@
+2026-11-07 17:01:22,502 INFO FE_AGAL run seed=42 timestamp=20261107_170122 dry_run=False
+2026-11-07 17:01:22,506 INFO Scenario A_in_domain samples=48 dictionary=False
+2026-11-07 17:07:22,281 WARNING COMET unavailable; using BERTScore fallback/zero when unavailable
+2026-11-07 17:07:23,463 INFO Translated 48 sentences in 353.530s
+2026-11-07 17:07:23,667 INFO Saved scenario A_in_domain
+2026-11-07 17:07:23,668 INFO Scenario B1_semi_no_dict samples=50 dictionary=False
+2026-11-07 17:13:36,494 WARNING COMET unavailable; using BERTScore fallback/zero when unavailable
+2026-11-07 17:13:36,816 INFO Translated 50 sentences in 365.381s
+2026-11-07 17:13:36,977 INFO Saved scenario B1_semi_no_dict
+2026-11-07 17:13:36,978 INFO Scenario B2_semi_with_dict samples=50 dictionary=True
+2026-11-07 17:25:59,222 WARNING COMET unavailable; using BERTScore fallback/zero when unavailable
+2026-11-07 17:25:59,687 INFO Translated 50 sentences in 736.747s
+2026-11-07 17:25:59,987 INFO Saved scenario B2_semi_with_dict
+2026-11-07 17:26:00,003 INFO Scenario C_out_of_domain samples=20 dictionary=False
+2026-11-07 17:27:09,398 WARNING COMET unavailable; using BERTScore fallback/zero when unavailable
+2026-11-07 17:27:09,689 INFO Translated 20 sentences in 63.755s
+2026-11-07 17:27:09,959 INFO Saved scenario C_out_of_domain

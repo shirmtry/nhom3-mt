@@ -1,0 +1,30 @@
+seed: 42
+scenarios:
+  A_in_domain:
+    name: In-domain
+    input_path: FE_AGAL/data_splits/A.jsonl
+    use_dictionary: false
+    metrics: [BLEU, chrF, chrF++, METEOR, TER, COMET, BERTScore, EM, TokenF1, DictionaryCoverage, Latency, Throughput, LengthRatio]
+    num_samples: 50
+    seed: 42
+  B1_semi_no_dict:
+    name: Semi-partial without dictionary
+    input_path: FE_AGAL/data_splits/B.jsonl
+    use_dictionary: false
+    metrics: [BLEU, chrF, chrF++, METEOR, TER, COMET, BERTScore, EM, TokenF1, DictionaryCoverage, Latency, Throughput, LengthRatio]
+    num_samples: 50
+    seed: 42
+  B2_semi_with_dict:
+    name: Semi-partial with dictionary
+    input_path: FE_AGAL/data_splits/B.jsonl
+    use_dictionary: true
+    metrics: [BLEU, chrF, chrF++, METEOR, TER, COMET, BERTScore, EM, TokenF1, DictionaryCoverage, Latency, Throughput, LengthRatio]
+    num_samples: 50
+    seed: 42
+  C_out_of_domain:
+    name: Out-of-domain
+    input_path: FE_AGAL/data_splits/C.jsonl
+    use_dictionary: false
+    metrics: [BLEU, chrF, chrF++, METEOR, TER, COMET, BERTScore, EM, TokenF1, DictionaryCoverage, Latency, Throughput, LengthRatio]
+    num_samples: 20
+    seed: 42

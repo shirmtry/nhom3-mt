@@ -1,0 +1,7 @@
+﻿2026-11-07T17:51:24.2407117+07:00 INFO reconciliation and fixes started
+2026-11-07T17:51:24.2424308+07:00 INFO fixed chrF sequence ngrams; validation values 14.49 and 100.00
+2026-11-07T17:51:24.2424308+07:00 INFO selected leakage strategy B: B2 is retrieval upper bound, no dictionary claims
+2026-11-07T17:51:24.2424308+07:00 INFO filtered memory diagnostic kept 299948 of 300000 after Jaccard threshold
+2026-11-07T17:51:24.2424308+07:00 INFO removed COMET/BERTScore output keys and plots
+2026-11-07T17:51:24.2424308+07:00 INFO Streamlit demo and four tests implemented
+core_diff=

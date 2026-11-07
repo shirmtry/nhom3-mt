@@ -1,0 +1,35 @@
+# Qualitative review
+
+## 10 worst
+
+- FR: Oh, une dernière chose je que avant parte.\n  EN ref: Maybe that could be the topic of my next talk.\n  Hyp: Oh, one last thing I'm going to do before I leave.
+- FR: donc aurions Nous aujourd’hui un problème similaire aux Etats-Unis.\n  EN ref: Enterprise managers promoted from the shop floor were, it is said, second rate.\n  Hyp: So we now have a similar problem in the United States.
+- FR: Rouler.\n  EN ref: Ride.\n  Hyp: Running.
+- FR: Mettons les pieds dans le plat avec les grands succès. toutefois\n  EN ref: Well, let's just jump right in and play the hits.\n  Hyp: Let's put our feet on the table with the biggest successes. toutefois,
+- FR: --Rires-- Il y a eu plusieurs moments de prise de conscience comme celui-là.\n  EN ref: (Laughter) (Applause) There's been kind of a series of epiphanies.\n  Hyp: --Laughter -- There were several moments of conscience like that.
+- FR: Je ne l'ai jamais oublié. toutefois\n  EN ref: And I never have.\n  Hyp: I've never forgotten it. toutefois,
+- FR: Pour cela les entreprises japonaises doivent participer davantage à la mondialisation. toutefois\n  EN ref: For starters, Japanese firms must become more globally integrated.\n  Hyp: For that to happen, Japanese companies need to participate more in globalization. toutefois,
+- FR: L’important paquet fiscal, mis en ouvre à la suite des chocs pétroliers des années 1970, a donné lieu à l’émergence d’une toute nouvelle industrie. toutefois\n  EN ref: A massive stimulus package, prompted by the 1970’s rise in oil prices, gave rise to an entirely new industry.\n  Hyp: An important fiscal package, opened in the wake of the 1970s-era oil chokes, led to the emergence of a new industry. toutefois,
+- FR: On avait hâte de la reconstruire, mais huit mois après notre emménagement, j'ai eu une attaque ressemblant à une crise cardiaque à cause d'une malformation congénitale. toutefois\n  EN ref: We were looking forward to rebuilding it, but eight months after we moved in, I suffered a stroke-like attack caused by a birth defect.\n  Hyp: We wanted to rebuild it, but six months after our move, I had an attack that looked like a heart attack due to a congenital malformation. toutefois,
+- FR: Nous ne savons pas bien déterminer qui est un preneur, surtout à la première impression. toutefois\n  EN ref: We're actually pretty bad at figuring out who's a taker, especially on first impressions.\n  Hyp: We don't know how to determine who is a preneur, especially at the first impression. toutefois,
+
+## 10 best
+
+- FR: Ca prendrait deux ou trois mille bombes.\n  EN ref: It would take two or three thousand bombs.\n  Hyp: That would take two or three thousand bombs.
+- FR: C'est dur à concevoir, et pose plus de questions.\n  EN ref: It's hard to conceive, and begs more questions.\n  Hyp: It's hard to conceive, and it asks more questions.
+- FR: Voici donc Bill d'Arabie.\n  EN ref: So here is Bill of Arabia.\n  Hyp: So here's Bill of Arabia.
+- FR: L'autre chapitre que je voulais explorer était comment nous l'utilisons, nos villes nos voitures, nos cultures, où se gens les regroupent autour des véhicules comme pour une célébration.\n  EN ref: The other chapter that I wanted to look at was how we use it -- our cities, our cars, our motorcultures, where people gather around the vehicle as a celebration.\n  Hyp: The other chapter that I wanted to explore was how we use it, our cities our cars, our cultures, where people gather around the cars as a celebration.
+- FR: Et ça en valait vraiment la peine.\n  EN ref: And it was totally worth it.\n  Hyp: And it was really worth it.
+- FR: Ceci n’est pas – et ne peut pas être – le job de tous les citoyens.\n  EN ref: That is not – and cannot be – the job of every citizen.\n  Hyp: This is not – and cannot be – the job of all citizens.
+- FR: Postées à la marge, les économies de marché émergentes en général et les pays dénommés BRIC (le Brésil, la Russie, l’Inde et la Chine) en particulier, se sentent chanceux d'être épargnés par ce maelström financier. toutefois\n  EN ref: Sitting on the sidelines, emerging-market economies in general, and the so-called BRIC countries (Brazil, Russia, India, and China) in particular, may feel fortunate to be spared this financial maelstrom.\n  Hyp: In the meantime, emerging market economies in general and BRIC countries in particular, and Brazil, Russia, India, and China in particular, feel fortunate to be spared by this financial maelstrom. toutefois,
+- FR: En arrivant à Washington au début de la compétition, je fus même accueilli à l’aéroport par des écrans de télévision diffusant les matchs.\n  EN ref: Even in Washington, where I arrived at the beginning of the tournament, I was greeted at the airport by television screens showing the game.\n  Hyp: When I arrived in Washington at the start of the tournament, I was even welcomed to the airport by television screens showing the matches.
+- FR: Si l’on considère la prolifération des groupes djihadistes, comme l’Etat Islamique, qui poursuit sa campagne d’appropriation des territoires en Iraq et en Syrie, et Boko Haram, compromis dans une campagne brutale d’enlèvements, de violences armées et d’assassinats au Niger.\n  EN ref: Consider the proliferation of jihadist groups, such as the Islamic State, which continues to seize territory in Iraq and Syria, and Boko Haram, which has been engaged in a brutal campaign of abductions, bombings, and murder in Nigeria.\n  Hyp: If we consider the proliferation of jihadist groups, such as the Islamic State, which continues its campaign of appropriation of territories in Iraq and Syria, and Boko Haram, compromised in a brutal campaign of deportations, military violence, and assassinations in Niger.
+- FR: La campagne de Moussavi et ses retombées ont montré clairement que ceux qui prétendaient ne pas voir de différences entre les candidats, excepté en matière de style et de présentation, avaient tort : même si les élections ont été truquées les voix de l’opposition à l’autoritarisme ecclésiastique ont été entendues.\n  EN ref: Mousavi’s campaign, and its aftermath, showed clearly that those who professed to see no difference between the candidates, except in style and presentation, were wrong: even if the election was rigged, the voices of opposition to clerical authoritarianism were heard.\n  Hyp: Moussavi’s campaign and its impact have shown that those who claimed to see differences between candidates, except in style and presentation, were wrong: even if the elections were truncated, the voices of the opponent to the ecclésiastical authoritarism were heard.
+
+## Failure mode hypotheses
+
+- Missing word: content tokens absent from the hypothesis.
+- Hallucination: extra unsupported English tokens.
+- Word order: meaning mostly preserved but modifier/adverb order differs.
+- Dictionary miss: rare domain word not represented in the memory fallback.
+- Noise sensitivity: controlled mutation propagates translation errors in B.

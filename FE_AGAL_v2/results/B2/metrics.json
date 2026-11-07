@@ -1,0 +1,98 @@
+{
+  "BLEU": {
+    "mean": 17.3612,
+    "std": 15.4445,
+    "ci95_low": 14.5547,
+    "ci95_high": 20.4901
+  },
+  "chrF": {
+    "mean": 44.1358,
+    "std": 18.57,
+    "ci95_low": 40.7646,
+    "ci95_high": 47.9113
+  },
+  "chrF++": {
+    "mean": 31.8179,
+    "std": 18.8966,
+    "ci95_low": 28.3025,
+    "ci95_high": 35.5493
+  },
+  "METEOR": {
+    "mean": 33.9917,
+    "std": 24.6617,
+    "ci95_low": 29.4074,
+    "ci95_high": 38.7405
+  },
+  "TER": {
+    "mean": 79.4377,
+    "std": 34.821,
+    "ci95_low": 72.3266,
+    "ci95_high": 86.1127
+  },
+  "EM": {
+    "mean": 1.0,
+    "std": 10.0,
+    "ci95_low": 0.0,
+    "ci95_high": 3.0
+  },
+  "TokenPrecision": {
+    "mean": 0.4273,
+    "std": 0.2374,
+    "ci95_low": 0.3813,
+    "ci95_high": 0.474
+  },
+  "TokenRecall": {
+    "mean": 0.4371,
+    "std": 0.2438,
+    "ci95_low": 0.3914,
+    "ci95_high": 0.4843
+  },
+  "TokenF1": {
+    "mean": 0.4275,
+    "std": 0.2339,
+    "ci95_low": 0.382,
+    "ci95_high": 0.4734
+  },
+  "DictionaryCoverage": {
+    "mean": 97.2072,
+    "std": 6.0261,
+    "ci95_low": 95.988,
+    "ci95_high": 98.258
+  },
+  "EvidenceOverlap": {
+    "mean": 26.6977,
+    "std": 20.5367,
+    "ci95_low": 22.9089,
+    "ci95_high": 30.7059
+  },
+  "LatencyMs": {
+    "mean": 8002.3373,
+    "std": 5459.0826,
+    "ci95_low": 7063.4894,
+    "ci95_high": 9219.9692
+  },
+  "LengthRatio": {
+    "mean": 1.127,
+    "std": 0.2965,
+    "ci95_low": 1.0692,
+    "ci95_high": 1.1859
+  },
+  "corpus": {
+    "BLEU_sacrebleu": 20.2754,
+    "TER_sacrebleu": 73.4568,
+    "chrF_sacrebleu": 41.6577
+  },
+  "n": 100,
+  "scenario": "B2",
+  "config": {
+    "name": "Semi-partial VI→EN, FR–EN auxiliary ON (B2_all)",
+    "input": "FE_AGAL_v2/data_splits/B2.jsonl",
+    "memory_mode": "full",
+    "fr_en_auxiliary": true,
+    "note": "Cùng input từng câu với B1. Đây là B2_all nếu memory có câu gần trùng test."
+  },
+  "wall_seconds": 801.67,
+  "Throughput_sent_per_s": 0.1247,
+  "hard_frac": 0.99,
+  "evidence_frac": 0.31
+}

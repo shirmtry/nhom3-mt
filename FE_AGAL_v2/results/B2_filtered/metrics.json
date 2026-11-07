@@ -1,0 +1,99 @@
+{
+  "BLEU": {
+    "mean": 17.3454,
+    "std": 15.4059,
+    "ci95_low": 14.5615,
+    "ci95_high": 20.4683
+  },
+  "chrF": {
+    "mean": 44.0946,
+    "std": 18.5471,
+    "ci95_low": 40.6944,
+    "ci95_high": 47.8702
+  },
+  "chrF++": {
+    "mean": 31.762,
+    "std": 18.9262,
+    "ci95_low": 28.2301,
+    "ci95_high": 35.4613
+  },
+  "METEOR": {
+    "mean": 34.0375,
+    "std": 24.4936,
+    "ci95_low": 29.5519,
+    "ci95_high": 38.7034
+  },
+  "TER": {
+    "mean": 78.9711,
+    "std": 35.0352,
+    "ci95_low": 71.7999,
+    "ci95_high": 85.5347
+  },
+  "EM": {
+    "mean": 1.0,
+    "std": 10.0,
+    "ci95_low": 0.0,
+    "ci95_high": 3.0
+  },
+  "TokenPrecision": {
+    "mean": 0.4289,
+    "std": 0.2393,
+    "ci95_low": 0.3827,
+    "ci95_high": 0.4738
+  },
+  "TokenRecall": {
+    "mean": 0.4377,
+    "std": 0.2419,
+    "ci95_low": 0.3931,
+    "ci95_high": 0.4844
+  },
+  "TokenF1": {
+    "mean": 0.4289,
+    "std": 0.2349,
+    "ci95_low": 0.3846,
+    "ci95_high": 0.4758
+  },
+  "DictionaryCoverage": {
+    "mean": 97.1517,
+    "std": 6.0257,
+    "ci95_low": 95.9415,
+    "ci95_high": 98.1921
+  },
+  "EvidenceOverlap": {
+    "mean": 24.4772,
+    "std": 17.9195,
+    "ci95_low": 21.1916,
+    "ci95_high": 28.0751
+  },
+  "LatencyMs": {
+    "mean": 6815.4993,
+    "std": 4048.4956,
+    "ci95_low": 6097.5532,
+    "ci95_high": 7701.9782
+  },
+  "LengthRatio": {
+    "mean": 1.1277,
+    "std": 0.2939,
+    "ci95_low": 1.0702,
+    "ci95_high": 1.1877
+  },
+  "corpus": {
+    "BLEU_sacrebleu": 19.8609,
+    "TER_sacrebleu": 72.9167,
+    "chrF_sacrebleu": 41.4826
+  },
+  "n": 100,
+  "scenario": "B2_filtered",
+  "config": {
+    "name": "B2 với memory đã lọc câu gần trùng test (kết luận dựa trên bản này)",
+    "input": "FE_AGAL_v2/data_splits/B2.jsonl",
+    "memory_mode": "full",
+    "fr_en_auxiliary": true,
+    "block_leaked_memory": true,
+    "note": "Chỉ chạy lại nếu phát hiện leakage; nếu 0 leakage thì B2_filtered ≡ B2."
+  },
+  "wall_seconds": 681.98,
+  "Throughput_sent_per_s": 0.1466,
+  "hard_frac": 0.99,
+  "evidence_frac": 0.28
+}

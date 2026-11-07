@@ -1,0 +1,14 @@
+2026-11-07 18:24:08,332 INFO FE_AGAL_v2 start · dry=True · n=5 · out=C:\Users\dinht\Desktop\tmg\nhom3-mt\FE_AGAL_v2\results_dryrun
+2026-11-07 18:24:11,153 INFO memory EN=300000 · vocab_EN=62476
+2026-11-07 18:24:14,897 INFO leakage check: 0/300000 memory câu gần trùng test (Jaccard>0.5)
+2026-11-07 18:24:28,466 INFO core loaded in 13.6s
+2026-11-07 18:24:28,471 INFO === A | n=5 | mode=full | aux=True ===
+2026-11-07 18:25:26,588 INFO A done: wall=57.8s · BLEU(corpus)=34.79 · chrF=53.40 · hard=1.000 · ev_used=0.400
+2026-11-07 18:25:26,591 INFO === B1 | n=5 | mode=draft | aux=False ===
+2026-11-07 18:25:58,694 INFO B1 done: wall=31.9s · BLEU(corpus)=10.10 · chrF=44.51 · hard=0.000 · ev_used=0.000
+2026-11-07 18:25:58,696 INFO === B2 | n=5 | mode=full | aux=True ===
+2026-11-07 18:26:41,438 INFO B2 done: wall=42.5s · BLEU(corpus)=10.58 · chrF=45.10 · hard=1.000 · ev_used=0.400
+2026-11-07 18:26:41,438 INFO B2_filtered: 0 leakage → copy B2 (identical by definition)
+2026-11-07 18:26:41,440 INFO === C | n=5 | mode=full | aux=True ===
+2026-11-07 18:27:03,474 INFO C done: wall=21.8s · BLEU(corpus)=43.73 · chrF=70.68 · hard=0.800 · ev_used=0.400
+2026-11-07 18:27:03,478 INFO ALL DONE in 168.6s

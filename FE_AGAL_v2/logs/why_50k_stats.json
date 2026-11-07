@@ -1,0 +1,140 @@
+{
+  "n_pairs": 50000,
+  "vi_vocab": 21882,
+  "en_vocab": 39422,
+  "len_vi": {
+    "mean": 16.38,
+    "median": 12.0,
+    "p10": 5,
+    "p90": 34
+  },
+  "len_en": {
+    "mean": 13.1,
+    "median": 10.0
+  },
+  "top20_vi": [
+    [
+      "và",
+      13727
+    ],
+    [
+      "có",
+      13113
+    ],
+    [
+      "là",
+      12452
+    ],
+    [
+      "của",
+      11368
+    ],
+    [
+      "một",
+      11030
+    ],
+    [
+      "không",
+      10494
+    ],
+    [
+      "tôi",
+      9810
+    ],
+    [
+      "được",
+      7851
+    ],
+    [
+      "bạn",
+      7117
+    ],
+    [
+      "trong",
+      6950
+    ],
+    [
+      "các",
+      6684
+    ],
+    [
+      "thể",
+      6523
+    ],
+    [
+      "đã",
+      6382
+    ],
+    [
+      "người",
+      6247
+    ],
+    [
+      "cho",
+      5872
+    ],
+    [
+      "với",
+      5770
+    ],
+    [
+      "anh",
+      5485
+    ],
+    [
+      "đó",
+      5385
+    ],
+    [
+      "sẽ",
+      5106
+    ],
+    [
+      "những",
+      5066
+    ]
+  ],
+  "coverage_curve": [
+    {
+      "n": 5000,
+      "vocab_vi": 5531,
+      "coverage_of_50k_vocab": 0.2528,
+      "coverage_10k_of_n": null
+    },
+    {
+      "n": 10000,
+      "vocab_vi": 8152,
+      "coverage_of_50k_vocab": 0.3725,
+      "coverage_10k_of_n": 0.573
+    },
+    {
+      "n": 20000,
+      "vocab_vi": 12428,
+      "coverage_of_50k_vocab": 0.568,
+      "coverage_10k_of_n": 0.7266
+    },
+    {
+      "n": 30000,
+      "vocab_vi": 15882,
+      "coverage_of_50k_vocab": 0.7258,
+      "coverage_10k_of_n": 0.8379
+    },
+    {
+      "n": 40000,
+      "vocab_vi": 19037,
+      "coverage_of_50k_vocab": 0.87,
+      "coverage_10k_of_n": 0.926
+    },
+    {
+      "n": 50000,
+      "vocab_vi": 21882,
+      "coverage_of_50k_vocab": 1.0,
+      "coverage_10k_of_n": 1.0
+    }
+  ],
+  "C_oov_rate_vs_50k": 0.0137,
+  "C_oov_rate_vs_5k": 0.0205,
+  "C_oov_rate_vs_10k": 0.0154,
+  "C_mean_len": 5.84,
+  "note": "Vocab tính theo regex chữ (không dùng underthesea) để tái lập nhanh; top words theo âm tiết."
+}

@@ -1,0 +1,8 @@
+{
+  "c_max_ref_tokens": 12,
+  "n_A_short": 60,
+  "A_short_BLEU": 25.35,
+  "A_short_chrF": 47.73,
+  "C_BLEU": 44.7912,
+  "C_chrF": 64.5333
+}

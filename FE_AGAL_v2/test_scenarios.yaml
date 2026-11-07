@@ -1,0 +1,44 @@
+# Kịch bản đánh giá FE_AGAL_v2 — nhiệm vụ chính VI→EN, FR–EN memory là auxiliary.
+# B1 và B2 dùng CÙNG file input (data_splits/B1.jsonl ≡ B2.jsonl, đã verify SHA).
+seed: 42
+source_lang: vi
+n_per_scenario: 100
+
+scenarios:
+  A:
+    name: "In-domain VI→EN (50k, production: FR–EN auxiliary ON)"
+    input: FE_AGAL_v2/data_splits/A.jsonl
+    memory_mode: full          # gate theo τ/ρ + tra memory khi khó
+    fr_en_auxiliary: true
+    note: "Test trích từ chính vi_en_train.txt → có thể overlap train (giả định đã ghi)."
+
+  B1:
+    name: "Semi-partial VI→EN, FR–EN auxiliary OFF"
+    input: FE_AGAL_v2/data_splits/B1.jsonl
+    memory_mode: draft         # không bao giờ tra memory
+    fr_en_auxiliary: false
+    note: "Input biến thể của A; reference giữ nguyên."
+
+  B2:
+    name: "Semi-partial VI→EN, FR–EN auxiliary ON (B2_all)"
+    input: FE_AGAL_v2/data_splits/B2.jsonl
+    memory_mode: full          # production
+    fr_en_auxiliary: true
+    note: "Cùng input từng câu với B1. Đây là B2_all nếu memory có câu gần trùng test."
+
+  B2_filtered:
+    name: "B2 với memory đã lọc câu gần trùng test (kết luận dựa trên bản này)"
+    input: FE_AGAL_v2/data_splits/B2.jsonl
+    memory_mode: full
+    fr_en_auxiliary: true
+    block_leaked_memory: true  # mask memory index có EN Jaccard > 0.5 với ref test
+    note: "Chỉ chạy lại nếu phát hiện leakage; nếu 0 leakage thì B2_filtered ≡ B2."
+
+  C:
+    name: "Out-of-domain VI→EN (Tatoeba, production: auxiliary ON)"
+    input: FE_AGAL_v2/data_splits/C.jsonl
+    memory_mode: full
+    fr_en_auxiliary: true
+    note: "Tatoeba đời thường, Jaccard nội dung < 0.1 với mọi câu trong 50k."
+
+# Không chạy D: model chỉ decode đích en_XX → không hỗ trợ VI→FR (not applicable).

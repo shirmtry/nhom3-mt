@@ -1,0 +1,62 @@
+{
+  "B1_vs_B2": {
+    "chrF": {
+      "mean_diff": 0.4149,
+      "p_value": 0.2952,
+      "ci95_low": -0.3511,
+      "ci95_high": 1.2461,
+      "n": 100,
+      "wins": 11,
+      "losses": 11,
+      "ties": 78
+    },
+    "BLEU": {
+      "mean_diff": -0.0519,
+      "p_value": 0.9032,
+      "ci95_low": -0.9595,
+      "ci95_high": 0.8716,
+      "n": 100,
+      "wins": 9,
+      "losses": 10,
+      "ties": 81
+    },
+    "ev_used_B1": 0.0,
+    "ev_used_B2": 0.31,
+    "hard_B1": 0.0,
+    "hard_B2": 0.99
+  },
+  "B1_vs_B2_filtered": {
+    "chrF": {
+      "mean_diff": 0.3081,
+      "p_value": 0.4412,
+      "ci95_low": -0.4357,
+      "ci95_high": 1.1239,
+      "n": 100,
+      "wins": 9,
+      "losses": 11,
+      "ties": 80
+    },
+    "BLEU": {
+      "mean_diff": -0.0677,
+      "p_value": 0.8744,
+      "ci95_low": -0.9698,
+      "ci95_high": 0.8528,
+      "n": 100,
+      "wins": 8,
+      "losses": 9,
+      "ties": 83
+    }
+  },
+  "B2_vs_B2_filtered": {
+    "chrF": {
+      "mean_diff": -0.1068,
+      "p_value": 0.274,
+      "ci95_low": -0.2851,
+      "ci95_high": 0.0,
+      "n": 100,
+      "wins": 0,
+      "losses": 2,
+      "ties": 98
+    }
+  }
+}

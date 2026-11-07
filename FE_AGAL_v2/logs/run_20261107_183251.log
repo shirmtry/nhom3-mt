@@ -1,0 +1,65 @@
+2026-11-07 18:32:51,981 INFO FE_AGAL_v2 start · dry=False · n=100 · out=C:\Users\dinht\Desktop\tmg\nhom3-mt\FE_AGAL_v2\results
+2026-11-07 18:32:55,031 INFO memory EN=300000 · vocab_EN=62476
+2026-11-07 18:33:21,812 INFO leakage check: 29/300000 memory câu gần trùng test (Jaccard>0.5)
+2026-11-07 18:33:32,086 INFO core loaded in 10.3s
+2026-11-07 18:33:32,088 INFO === A | n=100 | mode=full | aux=True ===
+2026-11-07 18:35:03,730 INFO   A 10/100 · 8.7s/câu · hard=10 ev_used=2
+2026-11-07 18:35:58,593 INFO   A 20/100 · 5.5s/câu · hard=20 ev_used=4
+2026-11-07 18:37:29,122 INFO   A 30/100 · 9.0s/câu · hard=29 ev_used=10
+2026-11-07 18:38:35,124 INFO   A 40/100 · 6.6s/câu · hard=39 ev_used=14
+2026-11-07 18:39:40,569 INFO   A 50/100 · 6.5s/câu · hard=48 ev_used=20
+2026-11-07 18:40:54,613 INFO   A 60/100 · 7.4s/câu · hard=58 ev_used=23
+2026-11-07 18:42:03,929 INFO   A 70/100 · 6.9s/câu · hard=68 ev_used=23
+2026-11-07 18:42:59,787 INFO   A 80/100 · 5.6s/câu · hard=78 ev_used=29
+2026-11-07 18:43:59,344 INFO   A 90/100 · 6.0s/câu · hard=87 ev_used=31
+2026-11-07 18:45:11,752 INFO   A 100/100 · 7.2s/câu · hard=97 ev_used=32
+2026-11-07 18:45:12,080 INFO A done: wall=699.7s · BLEU(corpus)=30.14 · chrF=51.12 · hard=0.970 · ev_used=0.320
+2026-11-07 18:45:12,084 INFO === B1 | n=100 | mode=draft | aux=False ===
+2026-11-07 18:46:06,900 INFO   B1 10/100 · 5.5s/câu · hard=0 ev_used=0
+2026-11-07 18:46:49,192 INFO   B1 20/100 · 4.2s/câu · hard=0 ev_used=0
+2026-11-07 18:47:58,218 INFO   B1 30/100 · 6.9s/câu · hard=0 ev_used=0
+2026-11-07 18:49:06,122 INFO   B1 40/100 · 6.8s/câu · hard=0 ev_used=0
+2026-11-07 18:49:51,760 INFO   B1 50/100 · 4.6s/câu · hard=0 ev_used=0
+2026-11-07 18:50:56,759 INFO   B1 60/100 · 6.5s/câu · hard=0 ev_used=0
+2026-11-07 18:52:05,100 INFO   B1 70/100 · 6.8s/câu · hard=0 ev_used=0
+2026-11-07 18:52:42,271 INFO   B1 80/100 · 3.7s/câu · hard=0 ev_used=0
+2026-11-07 18:53:31,076 INFO   B1 90/100 · 4.9s/câu · hard=0 ev_used=0
+2026-11-07 18:54:37,784 INFO   B1 100/100 · 6.7s/câu · hard=0 ev_used=0
+2026-11-07 18:54:38,208 INFO B1 done: wall=565.7s · BLEU(corpus)=20.00 · chrF=43.83 · hard=0.000 · ev_used=0.000
+2026-11-07 18:54:38,212 INFO === B2 | n=100 | mode=full | aux=True ===
+2026-11-07 18:55:59,308 INFO   B2 10/100 · 8.1s/câu · hard=10 ev_used=2
+2026-11-07 18:57:09,400 INFO   B2 20/100 · 7.0s/câu · hard=20 ev_used=7
+2026-11-07 18:58:32,347 INFO   B2 30/100 · 8.3s/câu · hard=30 ev_used=9
+2026-11-07 18:59:46,260 INFO   B2 40/100 · 7.4s/câu · hard=40 ev_used=11
+2026-11-07 19:00:44,919 INFO   B2 50/100 · 5.9s/câu · hard=49 ev_used=15
+2026-11-07 19:02:54,955 INFO   B2 60/100 · 13.0s/câu · hard=59 ev_used=20
+2026-11-07 19:04:17,040 INFO   B2 70/100 · 8.2s/câu · hard=69 ev_used=20
+2026-11-07 19:05:25,139 INFO   B2 80/100 · 6.8s/câu · hard=79 ev_used=25
+2026-11-07 19:06:29,353 INFO   B2 90/100 · 6.4s/câu · hard=89 ev_used=28
+2026-11-07 19:07:59,877 INFO   B2 100/100 · 9.0s/câu · hard=99 ev_used=31
+2026-11-07 19:08:00,491 INFO B2 done: wall=801.7s · BLEU(corpus)=20.28 · chrF=44.14 · hard=0.990 · ev_used=0.310
+2026-11-07 19:08:00,518 INFO === B2_filtered | n=100 | mode=full | aux=True ===
+2026-11-07 19:09:18,698 INFO   B2_filtered 10/100 · 7.8s/câu · hard=10 ev_used=2
+2026-11-07 19:10:26,104 INFO   B2_filtered 20/100 · 6.7s/câu · hard=20 ev_used=7
+2026-11-07 19:11:43,560 INFO   B2_filtered 30/100 · 7.7s/câu · hard=30 ev_used=9
+2026-11-07 19:12:53,493 INFO   B2_filtered 40/100 · 7.0s/câu · hard=40 ev_used=11
+2026-11-07 19:13:49,550 INFO   B2_filtered 50/100 · 5.6s/câu · hard=49 ev_used=15
+2026-11-07 19:15:08,377 INFO   B2_filtered 60/100 · 7.9s/câu · hard=59 ev_used=20
+2026-11-07 19:16:15,636 INFO   B2_filtered 70/100 · 6.7s/câu · hard=69 ev_used=20
+2026-11-07 19:17:01,473 INFO   B2_filtered 80/100 · 4.6s/câu · hard=79 ev_used=23
+2026-11-07 19:17:58,678 INFO   B2_filtered 90/100 · 5.7s/câu · hard=89 ev_used=25
+2026-11-07 19:19:22,499 INFO   B2_filtered 100/100 · 8.4s/câu · hard=99 ev_used=28
+2026-11-07 19:19:22,826 INFO B2_filtered done: wall=682.0s · BLEU(corpus)=19.86 · chrF=44.09 · hard=0.990 · ev_used=0.280
+2026-11-07 19:19:22,828 INFO === C | n=100 | mode=full | aux=True ===
+2026-11-07 19:20:01,916 INFO   C 10/100 · 3.9s/câu · hard=8 ev_used=5
+2026-11-07 19:20:46,816 INFO   C 20/100 · 4.5s/câu · hard=14 ev_used=11
+2026-11-07 19:21:28,749 INFO   C 30/100 · 4.2s/câu · hard=21 ev_used=17
+2026-11-07 19:22:05,491 INFO   C 40/100 · 3.7s/câu · hard=28 ev_used=22
+2026-11-07 19:22:52,697 INFO   C 50/100 · 4.7s/câu · hard=36 ev_used=30
+2026-11-07 19:23:27,712 INFO   C 60/100 · 3.5s/câu · hard=43 ev_used=35
+2026-11-07 19:24:07,889 INFO   C 70/100 · 4.0s/câu · hard=51 ev_used=41
+2026-11-07 19:24:47,806 INFO   C 80/100 · 4.0s/câu · hard=59 ev_used=46
+2026-11-07 19:25:19,896 INFO   C 90/100 · 3.2s/câu · hard=65 ev_used=50
+2026-11-07 19:26:05,935 INFO   C 100/100 · 4.6s/câu · hard=73 ev_used=57
+2026-11-07 19:26:06,180 INFO C done: wall=403.1s · BLEU(corpus)=44.79 · chrF=64.53 · hard=0.730 · ev_used=0.570
+2026-11-07 19:26:06,182 INFO ALL DONE in 3164.4s

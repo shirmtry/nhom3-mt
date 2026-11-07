@@ -1,0 +1,98 @@
+{
+  "BLEU": {
+    "mean": 17.4131,
+    "std": 14.6586,
+    "ci95_low": 14.7487,
+    "ci95_high": 20.3945
+  },
+  "chrF": {
+    "mean": 43.8259,
+    "std": 18.2966,
+    "ci95_low": 40.4102,
+    "ci95_high": 47.3903
+  },
+  "chrF++": {
+    "mean": 31.6476,
+    "std": 18.8348,
+    "ci95_low": 28.0474,
+    "ci95_high": 35.1992
+  },
+  "METEOR": {
+    "mean": 34.1543,
+    "std": 24.2757,
+    "ci95_low": 29.7105,
+    "ci95_high": 38.8252
+  },
+  "TER": {
+    "mean": 79.5873,
+    "std": 34.7917,
+    "ci95_low": 72.5565,
+    "ci95_high": 86.1274
+  },
+  "EM": {
+    "mean": 0.0,
+    "std": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0
+  },
+  "TokenPrecision": {
+    "mean": 0.4309,
+    "std": 0.241,
+    "ci95_low": 0.3845,
+    "ci95_high": 0.4762
+  },
+  "TokenRecall": {
+    "mean": 0.4368,
+    "std": 0.2393,
+    "ci95_low": 0.3903,
+    "ci95_high": 0.4826
+  },
+  "TokenF1": {
+    "mean": 0.4296,
+    "std": 0.2349,
+    "ci95_low": 0.3837,
+    "ci95_high": 0.4748
+  },
+  "DictionaryCoverage": {
+    "mean": 97.1467,
+    "std": 6.0306,
+    "ci95_low": 95.9318,
+    "ci95_high": 98.1823
+  },
+  "EvidenceOverlap": {
+    "mean": 0.0,
+    "std": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0
+  },
+  "LatencyMs": {
+    "mean": 5651.1296,
+    "std": 3825.506,
+    "ci95_low": 4936.5835,
+    "ci95_high": 6466.4536
+  },
+  "LengthRatio": {
+    "mean": 1.1243,
+    "std": 0.2841,
+    "ci95_low": 1.0697,
+    "ci95_high": 1.1802
+  },
+  "corpus": {
+    "BLEU_sacrebleu": 19.9958,
+    "TER_sacrebleu": 73.3025,
+    "chrF_sacrebleu": 41.3298
+  },
+  "n": 100,
+  "scenario": "B1",
+  "config": {
+    "name": "Semi-partial VI→EN, FR–EN auxiliary OFF",
+    "input": "FE_AGAL_v2/data_splits/B1.jsonl",
+    "memory_mode": "draft",
+    "fr_en_auxiliary": false,
+    "note": "Input biến thể của A; reference giữ nguyên."
+  },
+  "wall_seconds": 565.7,
+  "Throughput_sent_per_s": 0.1768,
+  "hard_frac": 0.0,
+  "evidence_frac": 0.0
+}

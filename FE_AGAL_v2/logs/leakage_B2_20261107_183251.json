@@ -1,0 +1,179 @@
+{
+  "threshold": 0.5,
+  "n_blocked": 29,
+  "blocked": [
+    5439,
+    6063,
+    21528,
+    28584,
+    50421,
+    62787,
+    68563,
+    74633,
+    90295,
+    94112,
+    113930,
+    116807,
+    145976,
+    151396,
+    171758,
+    174248,
+    174928,
+    177062,
+    178176,
+    178576,
+    217189,
+    232575,
+    233825,
+    243904,
+    256741,
+    258022,
+    286088,
+    294695,
+    298593
+  ],
+  "examples": [
+    {
+      "mem_index": 5439,
+      "ref_index": 39,
+      "jaccard": 0.571,
+      "mem_en": "That's all great, right?",
+      "ref": "All right, that's it, okay."
+    },
+    {
+      "mem_index": 6063,
+      "ref_index": 71,
+      "jaccard": 0.6,
+      "mem_en": "It was not.",
+      "ref": "Yet it was not enough."
+    },
+    {
+      "mem_index": 21528,
+      "ref_index": 6,
+      "jaccard": 1.0,
+      "mem_en": "We step over them on the sidewalk.",
+      "ref": "We step over them on the sidewalk."
+    },
+    {
+      "mem_index": 28584,
+      "ref_index": 88,
+      "jaccard": 0.75,
+      "mem_en": "But wait a minute.",
+      "ref": "Wait a minute, wait, wait, wait."
+    },
+    {
+      "mem_index": 50421,
+      "ref_index": 71,
+      "jaccard": 0.667,
+      "mem_en": "It was not drowned yet.",
+      "ref": "Yet it was not enough."
+    },
+    {
+      "mem_index": 62787,
+      "ref_index": 88,
+      "jaccard": 0.667,
+      "mem_en": "A minute.",
+      "ref": "Wait a minute, wait, wait, wait."
+    },
+    {
+      "mem_index": 68563,
+      "ref_index": 88,
+      "jaccard": 0.75,
+      "mem_en": "\"Hey, wait a minute.",
+      "ref": "Wait a minute, wait, wait, wait."
+    },
+    {
+      "mem_index": 74633,
+      "ref_index": 88,
+      "jaccard": 0.6,
+      "mem_en": "FG: No, no. Wait a minute!",
+      "ref": "Wait a minute, wait, wait, wait."
+    },
+    {
+      "mem_index": 90295,
+      "ref_index": 77,
+      "jaccard": 0.571,
+      "mem_en": "I want to talk about this.",
+      "ref": "- Wait. I want to talk..."
+    },
+    {
+      "mem_index": 94112,
+      "ref_index": 32,
+      "jaccard": 0.75,
+      "mem_en": "LM: Oh my God.",
+      "ref": "- Oh, my God."
+    },
+    {
+      "mem_index": 113930,
+      "ref_index": 32,
+      "jaccard": 0.6,
+      "mem_en": "(Laughter) CA: Oh, my God.",
+      "ref": "- Oh, my God."
+    },
+    {
+      "mem_index": 116807,
+      "ref_index": 40,
+      "jaccard": 0.6,
+      "mem_en": "Thank you so much for coming to TED.",
+      "ref": "Well, thank you so much for coming in."
+    },
+    {
+      "mem_index": 145976,
+      "ref_index": 79,
+      "jaccard": 0.577,
+      "mem_en": "This comes from a Nazi children's book published in 1938: \"Just look at these guys! The louse-infested beards, the filthy, protruding ears, those stained, fatty",
+      "ref": "This comes from a Nazi children's book published in 1938: \"Just look at these guys!"
+    },
+    {
+      "mem_index": 151396,
+      "ref_index": 39,
+      "jaccard": 0.571,
+      "mem_en": "It's that simple. Right.",
+      "ref": "All right, that's it, okay."
+    },
+    {
+      "mem_index": 171758,
+      "ref_index": 85,
+      "jaccard": 0.903,
+      "mem_en": "In the northern part of New Zealand, I dove in the blue water, where the water's a little warmer, and photographed animals like this giant sting ray swimming th",
+      "ref": "In the northern part of New Zealand, I dove in the blue water, where the water's a little warmer, and photographed animals like this gia nt sting ray swimming t"
+    },
+    {
+      "mem_index": 174248,
+      "ref_index": 32,
+      "jaccard": 0.6,
+      "mem_en": "(Video) Boy: Oh my God!",
+      "ref": "- Oh, my God."
+    },
+    {
+      "mem_index": 174928,
+      "ref_index": 40,
+      "jaccard": 0.6,
+      "mem_en": "Thank you so much for working in ALS.",
+      "ref": "Well, thank you so much for coming in."
+    },
+    {
+      "mem_index": 177062,
+      "ref_index": 77,
+      "jaccard": 0.667,
+      "mem_en": "\"Eric, I want to talk. I want to talk.\"",
+      "ref": "- Wait. I want to talk..."
+    },
+    {
+      "mem_index": 178176,
+      "ref_index": 27,
+      "jaccard": 1.0,
+      "mem_en": "Now, some people call that a theory of everything.",
+      "ref": "Now, some people call that a theory of everything."
+    },
+    {
+      "mem_index": 178576,
+      "ref_index": 39,
+      "jaccard": 0.667,
+      "mem_en": "That's all right.",
+      "ref": "All right, that's it, okay."
+    }
+  ],
+  "n_test": 100,
+  "seconds": 26.78
+}

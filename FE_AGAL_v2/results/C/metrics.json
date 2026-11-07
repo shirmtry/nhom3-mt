@@ -1,0 +1,98 @@
+{
+  "BLEU": {
+    "mean": 45.5955,
+    "std": 32.3992,
+    "ci95_low": 39.4431,
+    "ci95_high": 52.4542
+  },
+  "chrF": {
+    "mean": 64.5333,
+    "std": 26.4593,
+    "ci95_low": 59.3702,
+    "ci95_high": 69.8671
+  },
+  "chrF++": {
+    "mean": 54.7967,
+    "std": 31.7354,
+    "ci95_low": 48.4779,
+    "ci95_high": 61.3844
+  },
+  "METEOR": {
+    "mean": 56.7429,
+    "std": 32.9861,
+    "ci95_low": 50.2866,
+    "ci95_high": 63.4029
+  },
+  "TER": {
+    "mean": 45.9439,
+    "std": 35.8534,
+    "ci95_low": 38.714,
+    "ci95_high": 53.0402
+  },
+  "EM": {
+    "mean": 21.0,
+    "std": 40.936,
+    "ci95_low": 13.0,
+    "ci95_high": 29.0
+  },
+  "TokenPrecision": {
+    "mean": 0.6681,
+    "std": 0.28,
+    "ci95_low": 0.6093,
+    "ci95_high": 0.7245
+  },
+  "TokenRecall": {
+    "mean": 0.6628,
+    "std": 0.276,
+    "ci95_low": 0.6075,
+    "ci95_high": 0.7187
+  },
+  "TokenF1": {
+    "mean": 0.6612,
+    "std": 0.2742,
+    "ci95_low": 0.6052,
+    "ci95_high": 0.7161
+  },
+  "DictionaryCoverage": {
+    "mean": 98.25,
+    "std": 12.4392,
+    "ci95_low": 95.25,
+    "ci95_high": 100.0
+  },
+  "EvidenceOverlap": {
+    "mean": 39.6271,
+    "std": 35.3169,
+    "ci95_low": 32.701,
+    "ci95_high": 46.5463
+  },
+  "LatencyMs": {
+    "mean": 4029.5144,
+    "std": 1545.4797,
+    "ci95_low": 3729.7634,
+    "ci95_high": 4341.5608
+  },
+  "LengthRatio": {
+    "mean": 1.0145,
+    "std": 0.2064,
+    "ci95_low": 0.9739,
+    "ci95_high": 1.054
+  },
+  "corpus": {
+    "BLEU_sacrebleu": 44.7912,
+    "TER_sacrebleu": 45.4545,
+    "chrF_sacrebleu": 58.7165
+  },
+  "n": 100,
+  "scenario": "C",
+  "config": {
+    "name": "Out-of-domain VI→EN (Tatoeba, production: auxiliary ON)",
+    "input": "FE_AGAL_v2/data_splits/C.jsonl",
+    "memory_mode": "full",
+    "fr_en_auxiliary": true,
+    "note": "Tatoeba đời thường, Jaccard nội dung < 0.1 với mọi câu trong 50k."
+  },
+  "wall_seconds": 403.11,
+  "Throughput_sent_per_s": 0.2481,
+  "hard_frac": 0.73,
+  "evidence_frac": 0.57
+}

@@ -27,14 +27,22 @@ def chrf(hypothesis, reference, beta=2, min_n=1, max_n=6):
 
 
 def chrf_plus(hypothesis, reference):
-    # chrF++ augments character F-score with space-delimited word bigrams.
-    def bigrams(text):
-        w = re.findall(r"\S+", text.lower())
-        return set(zip(w, w[1:]))
-    sh, sr = set(hypothesis.lower().replace(" ", "")), set(reference.lower().replace(" ", ""))
-    overlap = len(sh & sr)
-    bh, br = bigrams(hypothesis), bigrams(reference)
-    bo = len(bh & br)
-    char_f = overlap / max((len(sh)+len(sr))/2, 1)
-    word_f = bo / max((len(bh)+len(br))/2, 1)
-    return 100 * (0.5 * char_f + 0.5 * word_f)
+    # chrF++ combines character n-grams (1-6) with word bigram F-scores.
+    def ngram_f1(h, r, n):
+        from collections import Counter
+        hc = Counter(h[i:i+n] for i in range(len(h)-n+1))
+        rc = Counter(r[i:i+n] for i in range(len(r)-n+1))
+        overlap = sum(min(v, rc[k]) for k, v in hc.items())
+        precision = overlap / max(sum(hc.values()), 1)
+        recall = overlap / max(sum(rc.values()), 1)
+        return 0.0 if not precision + recall else 2 * precision * recall / (precision + recall)
+
+    hyp_words = re.findall(r"\w+", hypothesis.lower())
+    ref_words = re.findall(r"\w+", reference.lower())
+    hyp_chars = " " + " ".join(hypothesis.lower().split()) + " "
+    ref_chars = " " + " ".join(reference.lower().split()) + " "
+    char_f = sum(ngram_f1(hyp_chars, ref_chars, n) for n in range(1, 7)) / 6
+    hyp_word_bigrams = tuple(zip(hyp_words, hyp_words[1:]))
+    ref_word_bigrams = tuple(zip(ref_words, ref_words[1:]))
+    word_f = ngram_f1(hyp_word_bigrams, ref_word_bigrams, 1)
+    return 100 * (char_f + word_f) / 2

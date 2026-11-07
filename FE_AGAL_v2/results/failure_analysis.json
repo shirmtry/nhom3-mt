@@ -1,0 +1,447 @@
+{
+  "A": {
+    "categories": {
+      "hallucination / thêm ý": 3,
+      "mistranslation (lệch từ vựng)": 6,
+      "paraphrase xa / thiếu ý": 1
+    },
+    "examples": [
+      {
+        "id": 36,
+        "category": "hallucination / thêm ý",
+        "chrF": 4.01,
+        "src": "Một chương mới sẽ bắt đầu.",
+        "ref": "Turkey, turkey, turkey.",
+        "hyp": "A new series will begin."
+      },
+      {
+        "id": 14,
+        "category": "hallucination / thêm ý",
+        "chrF": 6.76,
+        "src": "Mẹ mau đến đón con.",
+        "ref": "Please hurry, mommy.",
+        "hyp": "I'm coming to you."
+      },
+      {
+        "id": 7,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 7.47,
+        "src": "À, úp gối lên.",
+        "ref": "Well, with a pillow then.",
+        "hyp": "Oh, sit on your back."
+      },
+      {
+        "id": 22,
+        "category": "hallucination / thêm ý",
+        "chrF": 7.56,
+        "src": "Thưa, là nghề rèn.",
+        "ref": "Smith, My Lord.",
+        "hyp": "Well, it's an art."
+      },
+      {
+        "id": 2,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 9.71,
+        "src": "Cả hai ta đều tốt.",
+        "ref": "We've both done well.",
+        "hyp": "Both of us are good."
+      },
+      {
+        "id": 17,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.12,
+        "src": "Làm tôi sao lãng công việc.",
+        "ref": "Distracting me from work.",
+        "hyp": "Make me waste my time."
+      },
+      {
+        "id": 68,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.29,
+        "src": "Xử lý mốc bằng cách phơi nắng.",
+        "ref": "Fight very light mold with sunlight.",
+        "hyp": "Get rid of algae by applying sunshine."
+      },
+      {
+        "id": 18,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.99,
+        "src": "Khoá cửa khi đi.",
+        "ref": "Lock up before you leave.",
+        "hyp": "Close the door when you go."
+      },
+      {
+        "id": 73,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 12.06,
+        "src": "Phải cởi áo ra thôi.",
+        "ref": "I have to pull over.",
+        "hyp": "You've got to get your shirt off."
+      },
+      {
+        "id": 43,
+        "category": "paraphrase xa / thiếu ý",
+        "chrF": 12.51,
+        "src": "- Nhanh nhé, tôi đói lắm đấy.",
+        "ref": "- Hurry up. I'm starving.",
+        "hyp": "- Come on, I'm hungry."
+      }
+    ]
+  },
+  "B1": {
+    "categories": {
+      "hallucination / thêm ý": 3,
+      "VI token còn sót": 1,
+      "mistranslation (lệch từ vựng)": 6
+    },
+    "examples": [
+      {
+        "id": 36,
+        "category": "hallucination / thêm ý",
+        "chrF": 6.41,
+        "src": "Một chương mới sẽ bat đầu.",
+        "ref": "Turkey, turkey, turkey.",
+        "hyp": "A new series will start."
+      },
+      {
+        "id": 22,
+        "category": "VI token còn sót",
+        "chrF": 7.96,
+        "src": "rèn. là nghề Thưa,",
+        "ref": "Smith, My Lord.",
+        "hyp": "Protect. It's a job, thưa."
+      },
+      {
+        "id": 38,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.09,
+        "src": "kỹ năng Rèn luyện hẹn hò.",
+        "ref": "Practice your dating skills.",
+        "hyp": "How to get to know each other."
+      },
+      {
+        "id": 14,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.2,
+        "src": "Mẹ mau đen đón con.",
+        "ref": "Please hurry, mommy.",
+        "hyp": "I'm going black for you."
+      },
+      {
+        "id": 71,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.48,
+        "src": "Nhưgn thế van chưa đu.",
+        "ref": "Yet it was not enough.",
+        "hyp": "It's like it's a van."
+      },
+      {
+        "id": 11,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.78,
+        "src": "Vào torng đó đi.",
+        "ref": "Get your ass in there.",
+        "hyp": "Go to that torch."
+      },
+      {
+        "id": 2,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 9.71,
+        "src": "Cả hai ta tốt. đều",
+        "ref": "We've both done well.",
+        "hyp": "Both of us are good. "
+      },
+      {
+        "id": 18,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 10.95,
+        "src": "Khoa cửa khi đi.",
+        "ref": "Lock up before you leave.",
+        "hyp": "The door when you go."
+      },
+      {
+        "id": 68,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.2,
+        "src": "Xử lý mốc bằng cách phơi nang.",
+        "ref": "Fight very light mold with sunlight.",
+        "hyp": "Avoid parasites by removing the nangs."
+      },
+      {
+        "id": 65,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.48,
+        "src": "Bạn cơ nguy có mắc bệnh uốn ván nếu cắn chó bị árch da.",
+        "ref": "Tetanus is a potential infection that can stem from any dog bite that breaks the skin.",
+        "hyp": "You may be prone to pneumonia if your dog gets arched."
+      }
+    ]
+  },
+  "B2": {
+    "categories": {
+      "hallucination / thêm ý": 3,
+      "VI token còn sót": 1,
+      "mistranslation (lệch từ vựng)": 6
+    },
+    "examples": [
+      {
+        "id": 36,
+        "category": "hallucination / thêm ý",
+        "chrF": 6.41,
+        "src": "Một chương mới sẽ bat đầu.",
+        "ref": "Turkey, turkey, turkey.",
+        "hyp": "A new series will start."
+      },
+      {
+        "id": 22,
+        "category": "VI token còn sót",
+        "chrF": 7.96,
+        "src": "rèn. là nghề Thưa,",
+        "ref": "Smith, My Lord.",
+        "hyp": "Protect. It's a job, thưa."
+      },
+      {
+        "id": 38,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.09,
+        "src": "kỹ năng Rèn luyện hẹn hò.",
+        "ref": "Practice your dating skills.",
+        "hyp": "How to get to know each other."
+      },
+      {
+        "id": 14,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.2,
+        "src": "Mẹ mau đen đón con.",
+        "ref": "Please hurry, mommy.",
+        "hyp": "I'm going black for you."
+      },
+      {
+        "id": 73,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.44,
+        "src": "Phải coi áo ra thôi.",
+        "ref": "I have to pull over.",
+        "hyp": "Look at the shirt."
+      },
+      {
+        "id": 71,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.48,
+        "src": "Nhưgn thế van chưa đu.",
+        "ref": "Yet it was not enough.",
+        "hyp": "It's like it's a van."
+      },
+      {
+        "id": 11,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.78,
+        "src": "Vào torng đó đi.",
+        "ref": "Get your ass in there.",
+        "hyp": "Go to that torch."
+      },
+      {
+        "id": 18,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 10.95,
+        "src": "Khoa cửa khi đi.",
+        "ref": "Lock up before you leave.",
+        "hyp": "The door when you go."
+      },
+      {
+        "id": 68,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.2,
+        "src": "Xử lý mốc bằng cách phơi nang.",
+        "ref": "Fight very light mold with sunlight.",
+        "hyp": "Avoid parasites by removing the nangs."
+      },
+      {
+        "id": 65,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.48,
+        "src": "Bạn cơ nguy có mắc bệnh uốn ván nếu cắn chó bị árch da.",
+        "ref": "Tetanus is a potential infection that can stem from any dog bite that breaks the skin.",
+        "hyp": "You may be prone to pneumonia if your dog gets arched."
+      }
+    ]
+  },
+  "B2_filtered": {
+    "categories": {
+      "hallucination / thêm ý": 3,
+      "VI token còn sót": 1,
+      "mistranslation (lệch từ vựng)": 6
+    },
+    "examples": [
+      {
+        "id": 36,
+        "category": "hallucination / thêm ý",
+        "chrF": 6.41,
+        "src": "Một chương mới sẽ bat đầu.",
+        "ref": "Turkey, turkey, turkey.",
+        "hyp": "A new series will start."
+      },
+      {
+        "id": 22,
+        "category": "VI token còn sót",
+        "chrF": 7.96,
+        "src": "rèn. là nghề Thưa,",
+        "ref": "Smith, My Lord.",
+        "hyp": "Protect. It's a job, thưa."
+      },
+      {
+        "id": 38,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.09,
+        "src": "kỹ năng Rèn luyện hẹn hò.",
+        "ref": "Practice your dating skills.",
+        "hyp": "How to get to know each other."
+      },
+      {
+        "id": 14,
+        "category": "hallucination / thêm ý",
+        "chrF": 8.2,
+        "src": "Mẹ mau đen đón con.",
+        "ref": "Please hurry, mommy.",
+        "hyp": "I'm going black for you."
+      },
+      {
+        "id": 73,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.44,
+        "src": "Phải coi áo ra thôi.",
+        "ref": "I have to pull over.",
+        "hyp": "Look at the shirt."
+      },
+      {
+        "id": 71,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.48,
+        "src": "Nhưgn thế van chưa đu.",
+        "ref": "Yet it was not enough.",
+        "hyp": "It's like it's a van."
+      },
+      {
+        "id": 11,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 8.78,
+        "src": "Vào torng đó đi.",
+        "ref": "Get your ass in there.",
+        "hyp": "Go to that torch."
+      },
+      {
+        "id": 18,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 10.95,
+        "src": "Khoa cửa khi đi.",
+        "ref": "Lock up before you leave.",
+        "hyp": "The door when you go."
+      },
+      {
+        "id": 68,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.2,
+        "src": "Xử lý mốc bằng cách phơi nang.",
+        "ref": "Fight very light mold with sunlight.",
+        "hyp": "Avoid parasites by removing the nangs."
+      },
+      {
+        "id": 65,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.48,
+        "src": "Bạn cơ nguy có mắc bệnh uốn ván nếu cắn chó bị árch da.",
+        "ref": "Tetanus is a potential infection that can stem from any dog bite that breaks the skin.",
+        "hyp": "You may be prone to pneumonia if your dog gets arched."
+      }
+    ]
+  },
+  "C": {
+    "categories": {
+      "missing word / rút gọn": 1,
+      "mistranslation (lệch từ vựng)": 8,
+      "hallucination / thêm ý": 1
+    },
+    "examples": [
+      {
+        "id": 74,
+        "category": "missing word / rút gọn",
+        "chrF": 2.24,
+        "src": "Wǒ xǐhuān xuéxí zhōngwén",
+        "ref": "After a few minutes, Igor fell asleep.",
+        "hyp": "Wǒ xǐhuān xuéxí zhōngwén"
+      },
+      {
+        "id": 73,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 6.8,
+        "src": "Tiu bendo ne gluecas.",
+        "ref": "This tape isn't sticky.",
+        "hyp": "Tiu bendo ne gluecas."
+      },
+      {
+        "id": 70,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 7.9,
+        "src": "Tôi muốn nói có.",
+        "ref": "I'd like to say yes.",
+        "hyp": "I want to talk about that."
+      },
+      {
+        "id": 72,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 9.69,
+        "src": "Tôi chỉ làm được đến thế mà thôi.",
+        "ref": "This is all I can do.",
+        "hyp": "I did n't do that."
+      },
+      {
+        "id": 23,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 10.0,
+        "src": "Tôi vào được không?",
+        "ref": "May I enter?",
+        "hyp": "Can I get in?"
+      },
+      {
+        "id": 12,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.17,
+        "src": "Anh là của em.",
+        "ref": "You're mine.",
+        "hyp": "I'm yours."
+      },
+      {
+        "id": 27,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 11.17,
+        "src": "Em là của anh.",
+        "ref": "You're mine.",
+        "hyp": "I'm yours."
+      },
+      {
+        "id": 28,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 12.25,
+        "src": "Tôi không biết nói gì.",
+        "ref": "I'm at a loss for words.",
+        "hyp": "I do n't know what to say."
+      },
+      {
+        "id": 29,
+        "category": "mistranslation (lệch từ vựng)",
+        "chrF": 12.53,
+        "src": "Đó không phải là ý của tôi.",
+        "ref": "These aren't my ideas.",
+        "hyp": "This is not my opinion."
+      },
+      {
+        "id": 58,
+        "category": "hallucination / thêm ý",
+        "chrF": 12.75,
+        "src": "Chúng tôi đến khi nào",
+        "ref": "When do we arrive?",
+        "hyp": "We'll be there when we get there."
+      }
+    ]
+  }
+}

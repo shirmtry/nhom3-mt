@@ -1,0 +1,5 @@
+2026-11-07 18:23:15,449 INFO FE_AGAL_v2 start · dry=True · n=5 · out=C:\Users\dinht\Desktop\tmg\nhom3-mt\FE_AGAL_v2\results_dryrun
+2026-11-07 18:23:17,912 INFO memory EN=300000 · vocab_EN=62476
+2026-11-07 18:23:21,946 INFO leakage check: 0/300000 memory câu gần trùng test (Jaccard>0.5)
+2026-11-07 18:23:29,984 INFO core loaded in 8.0s
+2026-11-07 18:23:29,987 INFO === A | n=5 | mode=full | aux=True ===
